@@ -11,7 +11,8 @@ if password.replace(" ","").isdigit():
     print("The password is all numbers!")
 if password.find(" ") != -1:
     print("The password contains one or more spaces!")
-
+if len(password) > 8 and  not password.replace(" ","").isdigit() and password.find(" ") == -1:
+    print("password is valid")
 
 #----------------------nested if------------------------------------
 
